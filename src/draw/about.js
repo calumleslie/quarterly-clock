@@ -1,4 +1,5 @@
 import * as d3 from "d3";
+import { defaultPositionRounding as dpr } from "./standard";
 
 export function drawLogo(dataModel, guidesModel, svg) {
   const parentGroup = svg.selection.append("g").attr("id", "logo");
@@ -19,14 +20,23 @@ export function drawLogo(dataModel, guidesModel, svg) {
     endX: position.x + guidesModel.outerRadius / 2.0,
     endY: position.y + guidesModel.outerRadius / 5.0,
   };
+  const d = `M ${dpr(path.startX)},${dpr(path.startY)} A ${dpr(path.radiusX)},${dpr(path.radiusY)} 0 0,1 ${dpr(path.endX)},${dpr(path.endY)}`;
   parentGroup
     .append("defs")
     .append("path")
     .attr(
       "d",
-      `M ${path.startX},${path.startY} A ${path.radiusX},${path.radiusY} 0 0,1 ${path.endX},${path.endY}`
+      d
     )
     .attr("id", "logoPath");
+
+  parentGroup.append("path")
+    .attr(
+      "d",
+      d
+    ).attr("class", "guide")
+    .style("fill", "red")
+    .style("stroke", "black");
 
   const text = parentGroup
     .append("a")
@@ -36,7 +46,7 @@ export function drawLogo(dataModel, guidesModel, svg) {
   text
     .attr(
       "style",
-      `font-size: ${guidesModel.logo.fontSize}; dominant-baseline: middle; text-anchor: middle`
+      `font-size: ${guidesModel.logo.fontSize}; dominant-baseline: auto; text-anchor: middle`
     )
     .attr("fill", "black");
 
@@ -71,14 +81,23 @@ export function drawReadme(dataModel, guidesModel, svg) {
     endX: position.x + guidesModel.outerRadius / 2.0,
     endY: position.y + guidesModel.outerRadius / 5.0,
   };
+  const d = `M ${dpr(path.startX)},${dpr(path.startY)} A ${dpr(path.radiusX)},${dpr(path.radiusY)} 0 0,1 ${dpr(path.endX)},${dpr(path.endY)}`
   parentGroup
     .append("defs")
     .append("path")
     .attr(
       "d",
-      `M ${path.startX},${path.startY} A ${path.radiusX},${path.radiusY} 0 0,1 ${path.endX},${path.endY}`
+      d
     )
     .attr("id", "readmePath");
+
+  parentGroup.append("path")
+    .attr(
+      "d",
+      d
+    ).attr("class", "guide")
+    .style("fill", "red")
+    .style("stroke", "black");
 
   const text = parentGroup
     .append("a")
@@ -91,7 +110,7 @@ export function drawReadme(dataModel, guidesModel, svg) {
   text
     .attr(
       "style",
-      `font-size: ${guidesModel.readme.fontSize}; dominant-baseline: middle; text-anchor: middle`
+      `font-size: ${guidesModel.readme.fontSize}; dominant-baseline: auto; text-anchor: middle`
     )
     .attr("fill", "black");
 

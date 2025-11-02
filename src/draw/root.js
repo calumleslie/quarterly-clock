@@ -1,27 +1,20 @@
 import * as d3 from "d3";
 
-export function addSvgRoot(parentNode, dimensions) {
-  const { width, height } = dimensions;
-  console.log(`parent dimensions: ${width}x${height}`);
+export function addSvgRoot(parentNode) {
+  const viewBoxWidth = 1000;
+  const viewBoxHeight = 1000;
 
   const root = d3
     .select(parentNode)
     .append("svg")
     .attr("id", "clock")
-    .attr("width", width)
-    .attr("height", height);
-
-  const shiftToCenter = `translate(${width / 2.0} ${height / 2.0})`;
-  const topLevelGroup = root.append("g").attr("transform", shiftToCenter);
+    .attr("viewBox", `-${viewBoxWidth / 2} -${viewBoxHeight / 2} ${viewBoxWidth} ${viewBoxHeight}`)
+    .attr("preserveAspectRatio", "xMidYMid meet");
 
   return {
-    width,
-    height,
+    width: viewBoxWidth,
+    height: viewBoxHeight,
     root,
-    selection: topLevelGroup,
+    selection: root,
   };
-}
-
-export function removeSvgRoot() {
-  d3.select(`svg#clock`).remove();
 }
