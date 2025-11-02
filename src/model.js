@@ -34,11 +34,11 @@ function currentModelYear(yearStartMonth, now) {
   const yearNumber = yearMatchesCalendar ? now.getFullYear() : now.getFullYear() - 1;
   const yearStart = new Date(yearNumber, yearStartMonth);
 
-  return new ModelYear(yearStart);
+  return new YearInterval(yearStart);
 }
 
-// Represents a year period starting on a given date
-class ModelYear {
+// Represents a year interval starting on a given date
+class YearInterval {
   constructor(startDate) {
     this.startDate = startDate;
   }
