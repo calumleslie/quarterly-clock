@@ -7,13 +7,13 @@ import {
     subMilliseconds,
 } from "date-fns";
 
-export function currentYearInterval(yearStartMonth, now) {
+export function currentYearInterval(quarterSpec, now) {
     // This only works when yearStartMonth is positive; in practice this is all we need, though if
     // we want to support something beyond quarters you might need to know where the year of a given
     // number starts relative to the calendar year of that number
-    const yearMatchesCalendar = !isAfter(new Date(now.getFullYear(), yearStartMonth), now);
+    const yearMatchesCalendar = !isAfter(new Date(now.getFullYear(), quarterSpec.yearStartMonth), now);
     const yearNumber = yearMatchesCalendar ? now.getFullYear() : now.getFullYear() - 1;
-    const yearStart = new Date(yearNumber, yearStartMonth);
+    const yearStart = new Date(yearNumber, quarterSpec.yearStartMonth);
 
     return new YearInterval(yearStart);
 }

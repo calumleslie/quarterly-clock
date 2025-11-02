@@ -15,7 +15,7 @@ import { currentYearInterval } from "./yearInterval.js";
 export function modelForDate(now, quarterSpec) {
   now = toDate(now);
 
-  const year = currentYearInterval(quarterSpec.yearStartMonth || 0, now);
+  const year = currentYearInterval(quarterSpec, now);
 
   const elapsedInWholeDays = year.dayOfYear(now);
   const daysInYear = year.daysInYear;
