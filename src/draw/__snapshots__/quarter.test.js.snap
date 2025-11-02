@@ -1,281 +1,233 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`drawAllQuarterContext > last day of Q1 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="all-quarters">
-            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="all-quarters">
+        <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+        <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+        <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+        <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawAllQuarterContext > last day of Q2 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="all-quarters">
-            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="all-quarters">
+        <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+        <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+        <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+        <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawAllQuarterContext > last day of Q3 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="all-quarters">
-            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="all-quarters">
+        <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+        <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+        <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+        <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawAllQuarterContext > last day of Q4 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="all-quarters">
-            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="all-quarters">
+        <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+        <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+        <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+        <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawAllQuarterContext > start of Q1 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="all-quarters">
-            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="all-quarters">
+        <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+        <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+        <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+        <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawAllQuarterContext > start of Q2 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="all-quarters">
-            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="all-quarters">
+        <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+        <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+        <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+        <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawAllQuarterContext > start of Q3 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="all-quarters">
-            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="all-quarters">
+        <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+        <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+        <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+        <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawAllQuarterContext > start of Q4 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="all-quarters">
-            <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-            <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-            <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-            <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="all-quarters">
+        <path d="M0,-135A135,135,0,0,1,135,0L75,0A75,75,0,0,0,0,-75Z" fill="rgb(240, 228, 66)" stroke="none"></path>
+        <path d="M135,0A135,135,0,0,1,0,135L0,75A75,75,0,0,0,75,0Z" fill="rgb(204, 121, 167)" stroke="none"></path>
+        <path d="M0,135A135,135,0,0,1,-135,0L-75,0A75,75,0,0,0,0,75Z" fill="rgb(86, 180, 233)" stroke="none"></path>
+        <path d="M-135,0A135,135,0,0,1,0,-135L0,-75A75,75,0,0,0,-75,0Z" fill="rgb(0, 158, 115)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawCurrentQuarter > last day of Q1 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="current-quarter">
-            <path class="current-quarter" d="M5.81,-337.45A337.5,337.5,0,0,1,337.422,-7.262L74.983,-1.614A75,75,0,0,0,1.291,-74.989Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="current-quarter">
+        <path class="current-quarter" d="M5.81,-337.45A337.5,337.5,0,0,1,337.422,-7.262L74.983,-1.614A75,75,0,0,0,1.291,-74.989Z" fill="rgb(240, 228, 66)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawCurrentQuarter > last day of Q2 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="current-quarter">
-            <path class="current-quarter" d="M337.497,-1.452A337.5,337.5,0,0,1,8.714,337.387L1.936,74.975A75,75,0,0,0,74.999,-0.323Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="current-quarter">
+        <path class="current-quarter" d="M337.497,-1.452A337.5,337.5,0,0,1,8.714,337.387L1.936,74.975A75,75,0,0,0,74.999,-0.323Z" fill="rgb(204, 121, 167)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawCurrentQuarter > last day of Q3 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="current-quarter">
-            <path class="current-quarter" d="M2.905,337.487A337.5,337.5,0,0,1,-337.472,4.357L-74.994,0.968A75,75,0,0,0,0.646,74.997Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="current-quarter">
+        <path class="current-quarter" d="M2.905,337.487A337.5,337.5,0,0,1,-337.472,4.357L-74.994,0.968A75,75,0,0,0,0.646,74.997Z" fill="rgb(86, 180, 233)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawCurrentQuarter > last day of Q4 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="current-quarter">
-            <path class="current-quarter" d="M-337.497,-1.452A337.5,337.5,0,0,1,0,-337.5L0,-75A75,75,0,0,0,-74.999,-0.323Z" fill="rgb(0, 158, 115)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="current-quarter">
+        <path class="current-quarter" d="M-337.497,-1.452A337.5,337.5,0,0,1,0,-337.5L0,-75A75,75,0,0,0,-74.999,-0.323Z" fill="rgb(0, 158, 115)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawCurrentQuarter > start of Q1 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="current-quarter">
-            <path class="current-quarter" d="M5.81,-337.45A337.5,337.5,0,0,1,337.422,-7.262L74.983,-1.614A75,75,0,0,0,1.291,-74.989Z" fill="rgb(240, 228, 66)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="current-quarter">
+        <path class="current-quarter" d="M5.81,-337.45A337.5,337.5,0,0,1,337.422,-7.262L74.983,-1.614A75,75,0,0,0,1.291,-74.989Z" fill="rgb(240, 228, 66)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawCurrentQuarter > start of Q2 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="current-quarter">
-            <path class="current-quarter" d="M337.497,-1.452A337.5,337.5,0,0,1,8.714,337.387L1.936,74.975A75,75,0,0,0,74.999,-0.323Z" fill="rgb(204, 121, 167)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="current-quarter">
+        <path class="current-quarter" d="M337.497,-1.452A337.5,337.5,0,0,1,8.714,337.387L1.936,74.975A75,75,0,0,0,74.999,-0.323Z" fill="rgb(204, 121, 167)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawCurrentQuarter > start of Q3 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="current-quarter">
-            <path class="current-quarter" d="M2.905,337.487A337.5,337.5,0,0,1,-337.472,4.357L-74.994,0.968A75,75,0,0,0,0.646,74.997Z" fill="rgb(86, 180, 233)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="current-quarter">
+        <path class="current-quarter" d="M2.905,337.487A337.5,337.5,0,0,1,-337.472,4.357L-74.994,0.968A75,75,0,0,0,0.646,74.997Z" fill="rgb(86, 180, 233)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawCurrentQuarter > start of Q4 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="current-quarter">
-            <path class="current-quarter" d="M-337.497,-1.452A337.5,337.5,0,0,1,0,-337.5L0,-75A75,75,0,0,0,-74.999,-0.323Z" fill="rgb(0, 158, 115)" stroke="none"></path>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="current-quarter">
+        <path class="current-quarter" d="M-337.497,-1.452A337.5,337.5,0,0,1,0,-337.5L0,-75A75,75,0,0,0,-74.999,-0.323Z" fill="rgb(0, 158, 115)" stroke="none"></path>
     </g>
 </svg>"
 `;
 
 exports[`drawQuarterLabel > last day of Q1 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="info">
-            <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(240, 228, 66)" stroke="none">
-                Q1
-            </text>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="info">
+        <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(240, 228, 66)" stroke="none">
+            Q1
+        </text>
     </g>
 </svg>"
 `;
 
 exports[`drawQuarterLabel > last day of Q2 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="info">
-            <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(204, 121, 167)" stroke="none">
-                Q2
-            </text>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="info">
+        <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(204, 121, 167)" stroke="none">
+            Q2
+        </text>
     </g>
 </svg>"
 `;
 
 exports[`drawQuarterLabel > last day of Q3 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="info">
-            <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(86, 180, 233)" stroke="none">
-                Q3
-            </text>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="info">
+        <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(86, 180, 233)" stroke="none">
+            Q3
+        </text>
     </g>
 </svg>"
 `;
 
 exports[`drawQuarterLabel > last day of Q4 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="info">
-            <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(0, 158, 115)" stroke="none">
-                Q4
-            </text>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="info">
+        <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(0, 158, 115)" stroke="none">
+            Q4
+        </text>
     </g>
 </svg>"
 `;
 
 exports[`drawQuarterLabel > start of Q1 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="info">
-            <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(240, 228, 66)" stroke="none">
-                Q1
-            </text>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="info">
+        <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(240, 228, 66)" stroke="none">
+            Q1
+        </text>
     </g>
 </svg>"
 `;
 
 exports[`drawQuarterLabel > start of Q2 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="info">
-            <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(204, 121, 167)" stroke="none">
-                Q2
-            </text>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="info">
+        <text x="-405" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(204, 121, 167)" stroke="none">
+            Q2
+        </text>
     </g>
 </svg>"
 `;
 
 exports[`drawQuarterLabel > start of Q3 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="info">
-            <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(86, 180, 233)" stroke="none">
-                Q3
-            </text>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="info">
+        <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(86, 180, 233)" stroke="none">
+            Q3
+        </text>
     </g>
 </svg>"
 `;
 
 exports[`drawQuarterLabel > start of Q4 1`] = `
-"<svg id="clock" width="1000" height="1000">
-    <g transform="translate(500 500)">
-        <g id="info">
-            <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(0, 158, 115)" stroke="none">
-                Q4
-            </text>
-        </g>
+"<svg id="clock" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid meet">
+    <g id="info">
+        <text x="157.5" y="0" style="font-size: 180.00px; dominant-baseline: text-bottom; text-anchor: left" fill="rgb(0, 158, 115)" stroke="none">
+            Q4
+        </text>
     </g>
 </svg>"
 `;
