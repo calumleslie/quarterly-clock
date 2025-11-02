@@ -1,4 +1,5 @@
 import { modelForDate } from "./model.js";
+import { QuarterSpecification } from "./quarterSpecification.js";
 import { test, expect } from 'vitest';
 
 // references used:
@@ -8,7 +9,7 @@ import { test, expect } from 'vitest';
 
 test("start of Q1", () => {
   const now = new Date("01 Jan 2021 00:00:00 GMT");
-  const model = modelForDate(now, {yearStartMonth: 0});
+  const model = modelForDate(now, QuarterSpecification.default());
   expect(model.currentQuarter.index).toBe(0);
   expect(model.currentQuarter.label).toBe("Q1");
   expect(model.currentQuarter.start.yearFraction).toBeCloseTo(1 / 365);
@@ -32,7 +33,7 @@ test("start of Q1", () => {
 
 test("last day of Q1", () => {
   const now = new Date("31 Mar 2021 00:00:00 GMT");
-  const model = modelForDate(now, {yearStartMonth: 0});
+  const model = modelForDate(now, QuarterSpecification.default());
   expect(model.currentQuarter.index).toBe(0);
   expect(model.currentQuarter.label).toBe("Q1");
   expect(model.currentQuarter.start.yearFraction).toBeCloseTo(1 / 365);
@@ -50,7 +51,7 @@ test("last day of Q1", () => {
 
 test("start of Q2", () => {
   const now = new Date("01 Apr 2021 00:00:00 GMT");
-  const model = modelForDate(now, {yearStartMonth: 0});
+  const model = modelForDate(now, QuarterSpecification.default());
   expect(model.currentQuarter.index).toBe(1);
   expect(model.currentQuarter.label).toBe("Q2");
   expect(model.currentQuarter.start.yearFraction).toBeCloseTo(91 / 365);
@@ -68,7 +69,7 @@ test("start of Q2", () => {
 
 test("last day of Q2", () => {
   const now = new Date("30 Jun 2021 00:00:00 GMT");
-  const model = modelForDate(now, {yearStartMonth: 0});
+  const model = modelForDate(now, QuarterSpecification.default());
   expect(model.currentQuarter.index).toBe(1);
   expect(model.currentQuarter.label).toBe("Q2");
   expect(model.currentQuarter.start.yearFraction).toBeCloseTo(91 / 365);
@@ -86,7 +87,7 @@ test("last day of Q2", () => {
 
 test("start of Q3", () => {
   const now = new Date("01 Jul 2021 00:00:00 GMT");
-  const model = modelForDate(now, {yearStartMonth: 0});
+  const model = modelForDate(now, QuarterSpecification.default());
   expect(model.currentQuarter.index).toBe(2);
   expect(model.currentQuarter.label).toBe("Q3");
   expect(model.currentQuarter.start.yearFraction).toBeCloseTo(183 / 365);
@@ -104,7 +105,7 @@ test("start of Q3", () => {
 
 test("last day of Q3", () => {
   const now = new Date("30 Sep 2021 00:00:00 GMT");
-  const model = modelForDate(now, {yearStartMonth: 0});
+  const model = modelForDate(now, QuarterSpecification.default());
   expect(model.currentQuarter.index).toBe(2);
   expect(model.currentQuarter.label).toBe("Q3");
   expect(model.currentQuarter.start.yearFraction).toBeCloseTo(183 / 365);
@@ -122,7 +123,7 @@ test("last day of Q3", () => {
 
 test("start of Q4", () => {
   const now = new Date("01 Oct 2021 00:00:00 GMT");
-  const model = modelForDate(now, {yearStartMonth: 0});
+  const model = modelForDate(now, QuarterSpecification.default());
   expect(model.currentQuarter.index).toBe(3);
   expect(model.currentQuarter.label).toBe("Q4");
   expect(model.currentQuarter.start.yearFraction).toBeCloseTo(275 / 365);
@@ -140,7 +141,7 @@ test("start of Q4", () => {
 
 test("last day of Q4", () => {
   const now = new Date("31 Dec 2021 00:00:00 GMT");
-  const model = modelForDate(now, {yearStartMonth: 0});
+  const model = modelForDate(now, QuarterSpecification.default());
   expect(model.currentQuarter.index).toBe(3);
   expect(model.currentQuarter.label).toBe("Q4");
   expect(model.currentQuarter.start.yearFraction).toBeCloseTo(275 / 365);
@@ -159,7 +160,7 @@ test("last day of Q4", () => {
 
 test("start of Q1 with year starting July", () => {
   const now = new Date("01 Jul 2021 00:00:00 GMT");
-  const model = modelForDate(now, {yearStartMonth: 6});
+  const model = modelForDate(now, new QuarterSpecification(6));
   expect(model.currentQuarter.index).toBe(0);
   expect(model.currentQuarter.label).toBe("Q1");
   expect(model.currentQuarter.start.yearFraction).toBeCloseTo(1 / 365);
@@ -182,7 +183,7 @@ test("start of Q1 with year starting July", () => {
 
 test("last two weeks of Q4, available days", () => {
   const now = new Date("11 Dec 2021 00:00:00 GMT");
-  const model = modelForDate(now, {yearStartMonth: 0});
+  const model = modelForDate(now, QuarterSpecification.default());
 
   expect(model.currentQuarter.availableDays.length).toBe(10);
 

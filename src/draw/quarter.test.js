@@ -1,4 +1,5 @@
-import { modelForDate } from "../model.js";
+import { modelForDate } from "../model/model.js";
+import { QuarterSpecification } from "../model/quarterSpecification.js";
 import { createGuidesModel } from "./draw.js";
 import {
   drawCurrentQuarter,
@@ -22,7 +23,7 @@ describe("drawCurrentQuarter", () => {
 
   test("start of Q1", () => {
     const now = Date.parse("01 Jan 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -31,7 +32,7 @@ describe("drawCurrentQuarter", () => {
 
   test("last day of Q1", () => {
     const now = Date.parse("31 Mar 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -40,7 +41,7 @@ describe("drawCurrentQuarter", () => {
 
   test("start of Q2", () => {
     const now = Date.parse("01 Apr 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -49,7 +50,7 @@ describe("drawCurrentQuarter", () => {
 
   test("last day of Q2", () => {
     const now = Date.parse("30 Jun 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -58,7 +59,7 @@ describe("drawCurrentQuarter", () => {
 
   test("start of Q3", () => {
     const now = Date.parse("01 Jul 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -67,7 +68,7 @@ describe("drawCurrentQuarter", () => {
 
   test("last day of Q3", () => {
     const now = Date.parse("30 Sep 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -76,7 +77,7 @@ describe("drawCurrentQuarter", () => {
 
   test("start of Q4", () => {
     const now = Date.parse("01 Oct 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -85,7 +86,7 @@ describe("drawCurrentQuarter", () => {
 
   test("last day of Q4", () => {
     const now = Date.parse("31 Dec 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -106,7 +107,7 @@ describe("drawAllQuarterContext", () => {
 
   test("start of Q1", () => {
     const now = Date.parse("01 Jan 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -115,7 +116,7 @@ describe("drawAllQuarterContext", () => {
 
   test("last day of Q1", () => {
     const now = Date.parse("31 Mar 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -124,7 +125,7 @@ describe("drawAllQuarterContext", () => {
 
   test("start of Q2", () => {
     const now = Date.parse("01 Apr 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -133,7 +134,7 @@ describe("drawAllQuarterContext", () => {
 
   test("last day of Q2", () => {
     const now = Date.parse("30 Jun 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -142,7 +143,7 @@ describe("drawAllQuarterContext", () => {
 
   test("start of Q3", () => {
     const now = Date.parse("01 Jul 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -151,7 +152,7 @@ describe("drawAllQuarterContext", () => {
 
   test("last day of Q3", () => {
     const now = Date.parse("30 Sep 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -160,7 +161,7 @@ describe("drawAllQuarterContext", () => {
 
   test("start of Q4", () => {
     const now = Date.parse("01 Oct 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -169,7 +170,7 @@ describe("drawAllQuarterContext", () => {
 
   test("last day of Q4", () => {
     const now = Date.parse("31 Dec 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -190,7 +191,7 @@ describe("drawQuarterLabel", () => {
 
   test("start of Q1", () => {
     const now = Date.parse("01 Jan 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -199,7 +200,7 @@ describe("drawQuarterLabel", () => {
 
   test("last day of Q1", () => {
     const now = Date.parse("31 Mar 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -208,7 +209,7 @@ describe("drawQuarterLabel", () => {
 
   test("start of Q2", () => {
     const now = Date.parse("01 Apr 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -217,7 +218,7 @@ describe("drawQuarterLabel", () => {
 
   test("last day of Q2", () => {
     const now = Date.parse("30 Jun 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -226,7 +227,7 @@ describe("drawQuarterLabel", () => {
 
   test("start of Q3", () => {
     const now = Date.parse("01 Jul 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -235,7 +236,7 @@ describe("drawQuarterLabel", () => {
 
   test("last day of Q3", () => {
     const now = Date.parse("30 Sep 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -244,7 +245,7 @@ describe("drawQuarterLabel", () => {
 
   test("start of Q4", () => {
     const now = Date.parse("01 Oct 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 
@@ -253,7 +254,7 @@ describe("drawQuarterLabel", () => {
 
   test("last day of Q4", () => {
     const now = Date.parse("31 Dec 2021 00:00:00 GMT");
-    const model = modelForDate(now);
+    const model = modelForDate(now, QuarterSpecification.default());
 
     const parentNode = render(model);
 

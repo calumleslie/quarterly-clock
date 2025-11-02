@@ -12,11 +12,10 @@ import {
 } from "date-fns";
 import { currentYearInterval } from "./yearInterval.js";
 
-export function modelForDate(now, args) {
+export function modelForDate(now, quarterSpec) {
   now = toDate(now);
-  args = args || {};
 
-  const year = currentYearInterval(args.yearStartMonth || 0, now);
+  const year = currentYearInterval(quarterSpec.yearStartMonth || 0, now);
 
   const elapsedInWholeDays = year.dayOfYear(now);
   const daysInYear = year.daysInYear;
