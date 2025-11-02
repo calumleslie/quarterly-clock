@@ -33,11 +33,11 @@ export function createGuidesModel(svg) {
   const guidesModel = {
     outerRadius: clockRadius,
     remainder: {
-      fontSize: defaultFontSizeFormat(sideLength / 15),
+      fontSize: defaultFontSizeFormat(1.5 * sideLength / 15),
       box: {
-        width: 45 * ((0.5 * sideLength) / 275),
-        height: 35 * ((0.5 * sideLength) / 275),
-        textY: 30 * ((0.5 * sideLength) / 275),
+        width: 1.7 * 45 * ((0.5 * sideLength) / 275),
+        height: 1.7 * 35 * ((0.5 * sideLength) / 275),
+        textY: 40 * ((0.5 * sideLength) / 275),
       },
     },
     colors: {
