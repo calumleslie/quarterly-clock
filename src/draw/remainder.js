@@ -2,22 +2,6 @@ import * as d3 from "d3";
 import { defaultArcGenerator, defaultPositionRounding as dpr } from "./standard.js";
 
 export function drawRemainder(dataModel, guidesModel, svg) {
-  const pattern = svg.root
-    .append("defs")
-    .append("pattern")
-    .attr("id", "remainder-pattern")
-    .attr("width", `${dpr(guidesModel.remainder.box.width)}`)
-    .attr("height", `${dpr(guidesModel.remainder.box.height)}`)
-    .attr("patternUnits", "userSpaceOnUse")
-    .attr("patternTransform", "rotate(20)");
-
-  pattern
-    .append("rect")
-    .attr("width", `${dpr(guidesModel.remainder.box.width)}`)
-    .attr("height", `${dpr(guidesModel.remainder.box.height)}`)
-    .attr("opacity", "0.8")
-    .attr("fill", guidesModel.colors.remainder.bg.color);
-
   const extraPattern = svg.root
     .append("defs")
     .append("pattern")
@@ -74,7 +58,8 @@ export function drawRemainder(dataModel, guidesModel, svg) {
     .append("path")
     .attr("class", "remainder")
     .attr("d", arcGenerator(remainderArc))
-    .attr("fill", "url(#remainder-pattern)")
+    .attr("opacity", "0.8")
+    .attr("fill", guidesModel.colors.remainder.bg.color)
     .attr("clip-path", "url(#remainder-clip)")
     .attr("stroke", "none");
 
