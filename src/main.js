@@ -1,4 +1,4 @@
-import { modelForDate, parseParameters } from "./model.js";
+import { modelForDate, parseParameters } from "./model/model.js";
 import { renderUnder } from "./container";
 import { draw } from "./draw/draw";
 import "@fortawesome/fontawesome-free/css/all.css";
