@@ -86,3 +86,12 @@ test("last day of Q4", () => {
 
   expect(takeSnapshot(parentNode)).toMatchSnapshot();
 });
+
+test("start of Q1 with year starting July", () => {
+  const now = new Date("01 Jul 2021 00:00:00 GMT");
+  const model = modelForDate(now, new QuarterSpecification(6));
+
+  const parentNode = render(model);
+
+  expect(takeSnapshot(parentNode)).toMatchSnapshot();
+});
