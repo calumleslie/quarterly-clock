@@ -6,8 +6,9 @@ import {
     isAfter,
     subMilliseconds,
 } from "date-fns";
+import { QuarterSpecification } from "./quarterSpecification";
 
-export function currentYearInterval(quarterSpec, now) {
+export function currentYearInterval(quarterSpec: QuarterSpecification, now: Date): YearInterval {
     // This only works when yearStartMonth is positive; in practice this is all we need, though if
     // we want to support something beyond quarters you might need to know where the year of a given
     // number starts relative to the calendar year of that number
@@ -20,32 +21,33 @@ export function currentYearInterval(quarterSpec, now) {
 
 // Represents a year interval starting on a given date
 class YearInterval {
-    constructor(startDate) {
+    startDate: Date;
+    constructor(startDate: Date) {
         this.startDate = startDate;
     }
 
-    get endDate() {
+    get endDate(): Date {
         return subMilliseconds(addYears(this.startDate, 1), 1);
     }
 
-    get daysInYear() {
+    get daysInYear(): number {
         return this.dayOfYear(addYears(this.startDate, 1)) - 1;
     }
 
-    dayOfYear(date) {
+    dayOfYear(date: Date): number {
         return differenceInCalendarDays(date, this.startDate) + 1;
     }
 
-    quarterOf(date) {
+    quarterOf(date: Date): number {
         return Math.floor(differenceInCalendarMonths(date, this.startDate) / 3) + 1;
     }
 
-    startOfQuarter(quarter) {
+    startOfQuarter(quarter: number): Date {
         // Quarters are 1-indexed
         return addMonths(this.startDate, 3 * (quarter - 1));
     }
 
-    yearFraction(date) {
+    yearFraction(date: Date): number {
         // The code this replaced used 1-indexed days throughout so we do the same here; this
         // tends to make these calculations off by one
         const day = this.dayOfYear(date);

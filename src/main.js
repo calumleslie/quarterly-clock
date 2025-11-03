@@ -1,5 +1,5 @@
 import { modelForDate } from "./model/model.js";
-import { parseParameters } from "./model/quarterSpecification.js";
+import { parseParameters } from "./model/quarterSpecification.ts";
 import { renderUnder } from "./container";
 import { draw } from "./draw/draw";
 import "@fortawesome/fontawesome-free/css/all.css";

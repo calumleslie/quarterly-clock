@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "bundler",
+        "module": "preserve",
+        "allowJs": true,
+        "checkJs": false,
+        "noEmit": true,
+        "isolatedModules": true,
+        "strict": false,
+        "esModuleInterop": true,
+    },
+    "include": [
+        "src/model/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

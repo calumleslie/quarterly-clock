@@ -1,5 +1,5 @@
 import { modelForDate } from "../model/model.js";
-import { QuarterSpecification } from "../model/quarterSpecification.js";
+import { QuarterSpecification } from "../model/quarterSpecification.ts";
 import { addSvgRoot } from "./root.js";
 import { draw } from "./draw.js";
 import { createParentNode, takeSnapshot, DIMENSIONS } from "./test_setup.js";
