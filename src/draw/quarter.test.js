@@ -1,5 +1,5 @@
 import { modelForDate } from "../model/model.js";
-import { QuarterSpecification } from "../model/quarterSpecification.js";
+import { QuarterSpecification } from "../model/quarterSpecification.ts";
 import { createGuidesModel } from "./draw.js";
 import {
   drawCurrentQuarter,

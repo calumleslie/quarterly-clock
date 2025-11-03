@@ -10,7 +10,7 @@ import {
   subMilliseconds,
   toDate
 } from "date-fns";
-import { currentYearInterval } from "./yearInterval.js";
+import { currentYearInterval } from "./yearInterval.ts";
 
 export function modelForDate(now, quarterSpec) {
   now = toDate(now);
